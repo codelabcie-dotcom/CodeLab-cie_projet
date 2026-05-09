@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(161, 168, 144);
+    color: black;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px rgb(38, 40, 33) ;
+}
+header .barreHaute{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2vh;
+    background-color: #14264e;
+    color: white;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+header .barreHaute .liens a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    margin-top: 2px;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    padding-right: 35px;
+}
+
+header .menu .menus a{
+    text-decoration: none;
+    gap: 10px;
+    margin: auto;
+    color: #14264e;
+    margin-right: 20px;
+}
+
+header .menu button{
+    background-color: #14264e;
+    color: white;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+header .menu button:hover{
+    background-color: #294b93;
+    color: white;
+    transform: translateY(-1px);
+}
+
+main{
+    margin-top: 120px;
+}
+.partie {
+    justify-self: center;
+    display: flex;
+    margin: 5% 20%;
+    border: 1px solid #14264e;
+    padding: 40px;
+    background: #14264ea2;
+    border-radius: 25px;
+}
+.partie img{
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.partie .contenu{
+    text-align: center;
+    margin: 0px 20px;
+    color: black;
+    line-height: 1.6;
+}
+.partie .contenu span{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(38, 40, 33);
+}
+.partie button{
+    width: 80px;
+    height: 30px;
+    background-color: #14264e;
+    color: white;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.partie button:hover{
+    background-color: #294b93;
+    color: white;
+    transform: translateY(-1px);
+}
+footer{
+    background: #14264e;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer img{
+    width: 50px;
+}
