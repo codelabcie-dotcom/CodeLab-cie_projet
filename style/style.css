@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 body{
+    font-family: roboto;
     background-color: rgb(161, 168, 144);
     color: black;
+    background-image: linear-gradient(#bab1b1 1px, transparent 1px),linear-gradient(90deg, #bab1b1 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 header{
     position: fixed;
@@ -20,15 +23,25 @@ header .barreHaute{
     height: 2vh;
     background-color: #14264e;
     color: white;
-    padding: 5px;
-    padding-bottom: 20px;
+    padding: 5px 2px 25px 10px;
 }
 
-header .barreHaute .liens a{
+header .barreHaute a{
     text-decoration: none;
     color: white;
     margin-right: 30px;
-    margin-top: 2px;
+    top: 0;
+}
+#datetime{
+    font-size: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.compte-temps{
+    display: flex;
+}
+.compte-temps a{
+    margin-left: 2px;
 }
 
 header .menu{
@@ -37,6 +50,7 @@ header .menu{
     background-color: white;
     padding: 10px;
     padding-right: 35px;
+    font-weight: bold;
 }
 
 header .menu .menus a{
@@ -73,6 +87,11 @@ main{
     padding: 40px;
     background: #14264ea2;
     border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+.partie:hover{
+    transform: translateX(4px) translateY(-2px);
+    box-shadow: 2px 4px 6px rgb(38, 40, 33);
 }
 .partie img{
     width: 100px;
@@ -108,16 +127,36 @@ main{
     transform: translateY(-1px);
 }
 footer{
-    background: #14264e;
-    padding: 30px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+  background: #10245c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  flex-wrap: wrap;
 }
 footer a{
     text-decoration: none;
     color: white;
 }
+
+footer .links{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+footer .links a{
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+footer .links a:hover{
+  color: #6c63ff;
+  transform: translateY(-3px);
+}
+
 footer img{
-    width: 50px;
+  width: 80px;
 }
